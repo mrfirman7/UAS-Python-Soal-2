@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block judul %} DownloadAFA | TUTORIAL {% endblock %}
+
+{% block JudulAwal %}
+<h3 class="box-title text-center"> TUTORIAL DOWNLOAD </h3>
+{% endblock %}
+
+{% block JudulKonten %}
+{% endblock %}
+
+
+{% block konten %}
+
+  <div class="text-center m-2">
+    <h3>Mediafire</h3>
+    <img src="{{url_for('static', filename='img/mediafire.jpg')}}" alt="mediafire">
+    <p class="lead">Untuk mendownloadnya silahkan gunakan tombol download berwarna biru seperti pada gambar diatas. Jangan lupa pastikan juga ukuran file yang didownload sesuai.</p>
+  </div>
+  <div class="text-center m-2">
+    <h3>Zippyshare</h3>
+    <img src="{{url_for('static', filename='img/zippyshare.jpg')}}" alt="zippyshare">
+    <p class="lead">Untuk mendownloadnya silahkan gunakan tombol download berwarna orange seperti pada gambar diatas. Jangan lupa pastikan juga ukuran file yang didownload sesuai.</p>
+  </div>
+{% endblock %}
+
+

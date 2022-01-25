@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block judul %} DownloadAFA | DAFTAR APLIKASI {% endblock %}
+
+{% block JudulAwal %}
+<h3 class="box-title">DAFTAR APLIKASI </h3>
+{% endblock %}
+
+{% block JudulKonten %}
+{% endblock %}
+
+
+{% block konten %}
+
+
+    <table class="table table-borderless table-hover">
+        <thead>
+            <tr>
+                <th>Nama Aplikasi</th>
+              
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in hasil %}
+                <tr>
+                    
+                    <td><a href="/{{row.2}}" class="link-dark">{{row.2}}</a></td>
+                
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+

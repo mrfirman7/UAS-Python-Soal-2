@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block judul %} DownloadAFA | ADMIN {% endblock %}
+
+{% block JudulAwal %}
+<h3 class="box-title"> HALAMAN ADMIN </h3>
+{% endblock %}
+
+{% block JudulKonten %}
+    <a class="btn btn-primary pa" href="/admin/tambah/" role="button">Tambah Aplikasi</a>
+{% endblock %}
+
+{% block konten %}
+
+<br>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+              <th>Nama Aplikasi</th>
+              <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in hasil %}
+                <tr>
+                    <td>{{row.2}}</td>
+                    <td>
+                        <a href="/admin/ubah/{{row.0}}" class="btn btn-warning"> Ubah </a>
+                        <a href="/admin/hapus/{{row.0}}" class="btn btn-danger"
+                            onclick="return confirm('Yakin akan menghapus {{row.1}} ?')"> Hapus </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
