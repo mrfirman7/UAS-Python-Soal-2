@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block judul %} DownloadAFA | CONTACT US {% endblock %}
+
+{% block JudulAwal %}
+<h3 class="box-title"> CONTACT US </h3>
+{% endblock %}
+
+{% block JudulKonten %}
+{% endblock %}
+
+
+{% block konten %}
+<section class="p-2 text-dark bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="container">
+          <h3 class="text-left">Silahkan request aplikasi yang ingin kami sediakan.</h3>
+          <br>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nama</label>
+              <input type="text" name="nama" class="form-control" placeholder="Ujang mantap" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email address</label>
+              <input type="email" name="email" class="form-control" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Nama Aplikasi</label>
+              <textarea name="aplikasi" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="d-grid gap-1">
+              <button class="btn btn-primary btn-block">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+
